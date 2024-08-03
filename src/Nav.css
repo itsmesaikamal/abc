@@ -1,0 +1,87 @@
+/* Nav.css */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Navbar Styles */
+.navbar {
+  background-color: #007bff; /* Primary color */
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #e0e0e0;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Aligns the nav links to the right */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px; /* Space between items */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none; /* Removes underline */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d3d3d3;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/></svg>');
+}
+
+/* Left Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #343a40; /* Dark background for sidebar */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar .navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  text-decoration: none; /* Removes underline */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+  border-radius: 4px;
+}
+
+.sidebar .nav-item {
+  margin-bottom: 10px;
+}

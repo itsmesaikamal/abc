@@ -1,0 +1,74 @@
+/* Container for the entire view events page */
+.view-events-container {
+    margin-left: 220px; /* Adjust based on your navbar width */
+    padding: 20px;
+    background-color: #f8f9fa;
+    height: 100vh; /* Ensure it takes full viewport height */
+}
+
+/* Card container to hold the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual card styling */
+.event-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative; /* For positioning action icons */
+}
+
+/* Card header styling */
+.event-card h3 {
+    margin-top: 0;
+    color: #343a40;
+    font-size: 1.25rem;
+}
+
+/* Card content styling */
+.event-card p {
+    margin: 10px 0;
+}
+
+/* Action icons (edit and delete) */
+.card-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Edit and delete buttons as icons */
+.card-actions .edit-icon,
+.card-actions .delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.card-actions .edit-icon:hover,
+.card-actions .delete-icon:hover {
+    color: #0056b3;
+}
+
+/* Form styling when editing an event */
+.edit-event-form {
+    position: absolute; /* Keep it on top */
+    top: 20px; /* Adjust based on your needs */
+    right: 20px; /* Adjust based on your needs */
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    z-index: 10; /* Ensure it stays above other elements */
+}
